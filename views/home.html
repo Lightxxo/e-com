@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to our E-commerce Website!</title>
+  <link rel="stylesheet" href="/public/css/styles.css"> <!-- Link to CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Link to Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="header-title">Welcome to <span class="header-name">ERIK</span></h1>
+    <p class="header-description">We bring you the best deals on the latest <span class="highlight">gadgets</span>, <span class="highlight">fashion</span>, and <span class="highlight">more</span>!</p>
+    <button onclick="window.location.href='/views/login.html'">Login</button>
+    <button onclick="window.location.href='/views/signup.html'">Sign Up</button>
+    <button onclick="window.location.href='/views/help.html'">Help</button>
+  </header>
+  
+  <section class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for products...">
+    <button onclick="searchProducts()"><i class="fas fa-search"></i></button> <!-- Search icon -->
+  </section>
+
+  <section class="shop-now">  <!-- Shop now icon -->
+    <a href="/brand-store" class="btn">
+      <i class="fas fa-shopping-cart"></i> Shop Now!
+    </a>
+  </section>
+  
+  
+  <section class="categories">
+    <h2><span class="header-name">Products</span></h2>
+    <div class="category-grid">
+      <a href="/brand-category/mobiles" class="category">
+        <i class="fas fa-mobile-alt"></i>
+        <p>Mobile</p>
+      </a>
+      <a href="/brand-category/watches" class="category">
+        <i class="fas fa-clock"></i>
+        <p>Watches</p>
+      </a>
+      <a href="/brand-category/tv" class="category">
+        <i class="fas fa-tv"></i>
+        <p>TV</p>
+      </a>
+      <a href="/brand-category/camera" class="category">
+        <i class="fas fa-camera"></i>
+        <p>Camera</p>
+      </a>
+      <a href="/brand-category/headphones" class="category">
+        <i class="fas fa-headphones"></i>
+        <p>Headphones</p>
+      </a>
+      <a href="/brand-category/earbuds" class="category">
+        <i class="fas fa-headphones-alt"></i>
+        <p>Earbuds</p>
+      </a>
+    </div>
+  </section>
+  
+  
+  <section class="popular-products">
+    <h2>Popular Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="/public/images/1.jpg" alt="Product 1" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/2.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/3.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/4.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/5.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/6.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/7.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/8.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/9.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/10.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/11.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/12.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/13.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/14.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/15.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+      <div class="product">
+        <img src="/public//images/16.jpg" alt="Product 2" onclick="showProductInfo()">
+      </div>
+
+      <!-- Add more product images -->
+    </div>
+  </section>
+  
+
+  <!-- Product info modal -->
+<div id="productInfoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h3 id="productInfoTitle"></h3>
+    <img id="productInfoImage" src="" alt="Product Image">
+    <p id="productInfoDescription"></p>
+    <p id="productInfoPrice"></p>
+  </div>
+</div>
+  
+
+  <script src="/public/js/script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
